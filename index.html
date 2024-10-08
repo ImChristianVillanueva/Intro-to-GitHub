@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMMSGO Dashboard</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stat-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 22%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .charts {
+            display: flex;
+            justify-content: space-between;
+        }
+        .chart {
+            width: 48%;
+            height: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .menu-item {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .active {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2 style="color: #4CAF50;">CMMSGO</h2>
+            <div class="menu-item active">Dashboard</div>
+            <div class="menu-item">Location</div>
+            <div class="menu-item">Staff</div>
+            <div class="menu-item">Work Order</div>
+            <div class="menu-item">Assets</div>
+            <div class="menu-item">Parts</div>
+            <div class="menu-item">PMs</div>
+            <div class="menu-item">Vendor</div>
+            <div class="menu-item">POs</div>
+            <div class="menu-item">Calendar</div>
+            <div class="menu-item">Email Template</div>
+            <div class="menu-item">Landing Page</div>
+            <div class="menu-item">Settings</div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1>Dashboard - Juneau</h1>
+                <div>
+                    <span>Hi, company</span>
+                    <button style="margin-left: 10px;">Juneau</button>
+                    <button style="margin-left: 10px;">English</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Good Afternoon, Juneau</h2>
+                <p>Have a nice day! Did you know that you can quickly add your favorite product or category to the store?</p>
+                <button class="btn">Location Link</button>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Work Order</h3>
+                    <p style="font-size: 24px; font-weight: bold;">5</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Complete Work Order</h3>
+                    <p style="font-size: 24px; font-weight: bold;">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Assets</h3>
+                    <p style="font-size: 24px; font-weight: bold;">3</p>
+                </div>
+                <div class="stat-card">
+                    <h3>PMs</h3>
+                    <p style="font-size: 24px; font-weight: bold;">3</p>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h3>Total Work Order</h3>
+                    <!-- Placeholder for donut chart -->
+                    <div style="width: 200px; height: 200px; border-radius: 50%; border: 20px solid #4CAF50; border-right-color: #2196F3; margin: 20px auto;"></div>
+                </div>
+                <div class="chart">
+                    <h3>Work Order Overview</h3>
+                    <!-- Placeholder for line chart -->
+                    <div style="width: 100%; height: 200px; background: linear-gradient(to top right, #FFA500, transparent);"></div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Work Order</h3>
+                <p>0 Work Order completed out of 5</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
